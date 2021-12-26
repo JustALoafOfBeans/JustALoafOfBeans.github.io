@@ -1,11 +1,15 @@
-header {
+.header {
     padding: 80px;
     text-align: center;
     background: #a6a6f0; /* lavender */
     color: black; /* text color */ 
 }
 
-body {
+.navbar {
+    background-color: black;
+}
+
+.body {
     background-color: white;
     font: 18px Arial, sans-serif;
 }
