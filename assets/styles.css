@@ -1,6 +1,7 @@
 body {
     background-color: white;
     font: 18px Arial, sans-serif;
+    overflow-y: scroll;
 }
 
 .header {
@@ -26,16 +27,16 @@ body {
     margin-left: 250px;
 }
 
-ul.contact {
-    list-style: none;
-    padding: 0;
-}
-ul.contact > li {
-    padding: 0;
-}
+    ul.contact {
+        list-style: none;
+        padding: 0;
+    }
+        ul.contact > li {
+            padding: 0;
+        }
 
 /* Side navbar stuff */
-ul {
+ul.s {
     list-style-type: none;
     margin: 0;
     padding: 0;
