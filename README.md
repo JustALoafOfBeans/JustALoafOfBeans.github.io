@@ -10,6 +10,7 @@ Hello! I am Victoria Chen and this is the repo for my personal website. Evidentl
 For this project I will be learning: HTML, CSS/SASS, and website dev.
 
 ### Future plans
-1. Get the CSS file working
-2. Write up a basic static webpage with details about me
-3. Beautify! Add transitions, format for better UX, etc.
+1. Clean up layout
+2. Add sections and be able to jump between sections with side bar
+3. Add images
+4. Beautify! Clean up anything and develop for betterh UX
