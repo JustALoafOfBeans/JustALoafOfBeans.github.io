@@ -6,13 +6,55 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #1818c5; /* lavender */
+    background: #ababf5;
     color: black; /* text color */ 
 }
 
-.navbar {
-    background-color: black;
+.Welcome {
+    margin-left: 250px;
 }
+
+.Projects {
+    margin-left: 250px;
+}
+
+.Research {
+    margin-left: 250px;
+}
+
+.Contacts {
+    margin-left: 250px;
+}
+
+ul.contact {
+    list-style: none;
+    padding: 0;
+}
+ul.contact > li {
+    padding: 0;
+}
+
+/* Side navbar stuff */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto; /* Give sidebar independent scrolling if too many options */
+  }
+  
+  li a {
+    display: block;olor: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover { /* Change the link color on hover */
+    background-color: #555;
+    color: white;
+  }
 
 /* Links
 - https://www.w3schools.com/howto/howto_make_a_website.asp
