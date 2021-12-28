@@ -12,19 +12,21 @@ body {
 }
 
 .Welcome {
-    margin-left: 250px;
+    padding: 80px;
 }
 
 .Projects {
-    margin-left: 250px;
+    padding: 80px;
+    background: #d5d5f1;
 }
 
 .Research {
-    margin-left: 250px;
+    padding: 80px;
 }
 
 .Contacts {
-    margin-left: 250px;
+    padding: 80px;
+    background: #d5d5f1;
 }
 
     ul.contact {
@@ -35,7 +37,31 @@ body {
             padding: 0;
         }
 
-/* Side navbar stuff */
+.topbar {
+    background-color: black;
+    text-align: left;
+}
+    .topbar a {
+        display: block;
+        float: right;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .topbar a:hover {
+        background-color: #555;
+        color: black;
+    }
+
+    .topbar a.active {
+        background-color: #f1f1f1;
+        color: black; /* text color */
+    }
+
+
+ /* For removed sidebar */
 ul.s {
     list-style-type: none;
     margin: 0;
@@ -44,10 +70,11 @@ ul.s {
     background-color: #f1f1f1;
     position: fixed;
     overflow: auto; /* Give sidebar independent scrolling if too many options */
-  }
-  
+  } 
+
   li a {
-    display: block;olor: #000;
+    display: block;
+    color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
@@ -55,7 +82,7 @@ ul.s {
   li a:hover { /* Change the link color on hover */
     background-color: #555;
     color: white;
-  }
+  } 
 
 /* Links
 - https://www.w3schools.com/howto/howto_make_a_website.asp
