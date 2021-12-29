@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font: 18px Arial, sans-serif;
+    font: 18px Trebuchet, Tahoma, sans-serif;
     overflow-y: scroll;
 }
 
@@ -11,8 +11,14 @@ body {
     color: black; /* text color */ 
 }
 
-.Welcome {
-    padding: 80px;
+.content {
+    padding: 5px;
+}
+
+#Welcome {
+    padding: 5px;
+    width: 100%;
+    height: 50%;
 }
 
 .Projects {
@@ -60,6 +66,14 @@ body {
         color: black; /* text color */
     }
 
+/*
+.image {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:cover;
+    margin: 10px;
+} */
 
  /* For removed sidebar */
 ul.s {
@@ -88,4 +102,5 @@ ul.s {
 - https://www.w3schools.com/howto/howto_make_a_website.asp
 - https://www.w3schools.com/tags/tag_link.asp
 - https://www.w3schools.com/css/css_howto.asp
+- references: https://medium.com/makers-byte/the-25-best-personal-portfolio-website-design-inspiration-examples-e2eb1c8734df
 */ 
