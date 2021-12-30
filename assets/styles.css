@@ -16,7 +16,7 @@ body {
 }
 
 #Welcome {
-    background-image: url('/JustALoafOfBeans.github.io/assets/sakura.jpg');
+    background-image: url('./JustALoafOfBeans.github.io/assets/Sakura.JPG');
     background-size: cover;
     padding: 5px;
     width: 100%;
