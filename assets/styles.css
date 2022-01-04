@@ -4,6 +4,7 @@ html {
     margin: 0px;
     padding: 0px;
     overflow-x: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,26 +17,43 @@ body {
 }
 
 #Welcome {
-    background-image: url('./pink\ and\ blue\ sakura.png');
-    background-size: cover;
     width: 100%;
     margin: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
 }
 
+    #Welcome::before {
+        content: "";
+        background-image: url('./pink\ and\ blue\ sakura.png');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
 .content {
-    padding: 5px;
+    padding: 20px 60px;
     overflow: auto; /* clearfix if overflow breaks */
     clear: both;
     vertical-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin: 0px 0px 0px 5%;
 }
 
 .inner {
     position: relative;
-    width: 60% ;
-    padding: 20px;
+    width: 40%;
+    padding: 20px 0px 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -44,14 +62,14 @@ body {
 
 .inner::before {
     content: "";
-    background-color: white;
+    background-color: #89d0f0;
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #profile {
@@ -60,14 +78,18 @@ body {
 }
 
 #two {
-    padding: 80px;
-    background: #d5d5f1;
+    padding: 20px 80px;
+    background: white;
     margin: 0px;
 }
 
 #about {
     padding: 50px;
-    background: #6161a3;
+    background: #8fc7e0;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    @include clearfix;
 }
     .content2 {
         display: flex;
@@ -139,11 +161,11 @@ body {
 
 .Research {
     padding: 80px;
+    background: #8fc7e0;
 }
 
 .Contacts {
     padding: 80px;
-    background: #d5d5f1;
 }
 
     ul.contact {
@@ -155,12 +177,11 @@ body {
         }
 
 #topbar {
-    background-color: #bbd3fb;
+    background-color: white;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
     margin: 0px;
 }
 
@@ -190,6 +211,17 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    color: white;
+    font-size: 25px;
 }
 
  /* For removed sidebar */
