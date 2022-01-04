@@ -18,7 +18,6 @@ body {
 #Welcome {
     background-image: url('./pink\ and\ blue\ sakura.png');
     background-size: cover;
-    padding: 5px;
     width: 100%;
     margin: 0px;
 }
@@ -67,9 +66,76 @@ body {
 }
 
 #about {
-    padding: 80px;
+    padding: 50px;
     background: #6161a3;
 }
+    .content2 {
+        display: flex;
+        gap: 20px;
+    }
+
+    .Academic {
+        position: relative;
+        width: 60% ;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .Academic::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
+    .Curiosities {
+        position: relative;
+        width: 60% ;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .Curiosities::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
+    .Hobbies {
+        position: relative;
+        width: 60% ;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .Hobbies::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
 
 .Research {
     padding: 80px;
@@ -90,7 +156,6 @@ body {
 
 #topbar {
     background-color: #bbd3fb;
-    padding: 5px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -98,21 +163,27 @@ body {
     gap: 10px;
     margin: 0px;
 }
-    .topbar a {
+
+    .sections {
+        display: flex;
+        padding: 5px;
+    }
+
+    #topbar a {
         display: block;
         float: right;
         text-align: center;
-        padding: 14px 16px;
+        padding: 8px 10px;
         text-decoration: none;
         font-size: 17px;
     }
     
-    .topbar a:hover {
+    #topbar a:hover {
         background-color: #555;
         color: black;
     }
 
-    .topbar a.active {
+    #topbar a.active {
         background-color: #f1f1f1;
         color: black; /* text color */
     }
