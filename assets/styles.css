@@ -163,12 +163,6 @@ body {
   text-align: center;
 }
 
-.circular--square {
-  border-radius: 50%;
-  height: 70%;
-  width: height;
-}
-
 .projects {
   color: black;
 }
@@ -232,6 +226,13 @@ ul.contact > li {
   background-color: #f1f1f1;
   color: black;
   /* text color */
+}
+
+/* Utility */
+.circular--square {
+  border-radius: 50%;
+  height: 70%;
+  width: height;
 }
 
 h1, h2, h3, h4, h5, h6, p {
