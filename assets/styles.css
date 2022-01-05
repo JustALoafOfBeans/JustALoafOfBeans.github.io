@@ -35,6 +35,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 100px 0px 100px 0px;
+  color: white;
 }
 
 #Welcome::before {
@@ -115,6 +116,8 @@ body {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 5%;
+  color: white;
 }
 
 #about::after {
@@ -127,102 +130,54 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
-}
-
-.Academic {
-  position: relative;
-  width: 60%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  padding: 10px;
+}
+
+.aboutDetails {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.Academic::before {
-  content: "";
-  background-color: white;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
+.sewing, .food, .games {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+  height: 250px;
+  text-align: center;
 }
 
-.Curiosities {
-  position: relative;
-  width: 60%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.circular--square {
+  border-radius: 50%;
+  height: 70%;
+  width: height;
 }
 
-.Curiosities::before {
-  content: "";
-  background-color: white;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.Hobbies {
-  position: relative;
-  width: 60%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.Hobbies::before {
-  content: "";
-  background-color: white;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
+.projects {
+  color: black;
 }
 
 .Research {
   padding: 80px;
   background: #8fc7e0;
+  margin: 0% 2%;
+  color: black;
 }
 
 .Contacts {
@@ -281,16 +236,24 @@ ul.contact > li {
 
 h1, h2, h3, h4, h5, h6, p {
   position: relative;
+  color: inherit;
 }
 
 h1 {
-  color: white;
   font-size: 75px;
   margin-bottom: 0px;
 }
 
+h2 {
+  font-size: 50px;
+  margin: 0px;
+}
+
 h4 {
-  color: white;
+  font-size: 25px;
+}
+
+p {
   font-size: 25px;
 }
 
