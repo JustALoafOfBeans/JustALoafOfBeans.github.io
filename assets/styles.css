@@ -253,6 +253,21 @@ p {
 
 .Contacts {
   padding: 80px;
+  text-align: center;
+}
+
+h3 {
+  /* Create centered text with horizontal lines */
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+h3 span {
+  background: #fff;
+  padding: 0 10px;
 }
 
 ul.contact {
@@ -261,7 +276,8 @@ ul.contact {
 }
 
 ul.contact > li {
-  padding: 0;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
 }
 
 /* Links
