@@ -1,0 +1,53 @@
+#two {
+    padding: 20px 80px;
+    background: white;
+    margin: 0px;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    padding: 50px;
+    background: $highlightColor;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    @include clearfix;
+    color: white;
+}
+
+#profile { /* Profile picture */
+    float: left;
+    margin: 20px 20px;
+}
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .aboutDetails {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 10%;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .sewing, .food, .games {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 30%;
+        height: 250px;
+        text-align: center;
+    }
+
+/* PROJECTS SECTION */
+
+.projects {
+    color: black;
+}
