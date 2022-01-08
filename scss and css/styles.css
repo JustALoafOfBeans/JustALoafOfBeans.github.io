@@ -114,7 +114,7 @@ p {
 
 #Welcome::before {
   content: "";
-  background-image: url("./pink and blue sakura.png");
+  background-image: url("../assets/pink and blue sakura.png");
   background-size: cover;
   position: absolute;
   top: 0px;
