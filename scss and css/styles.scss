@@ -19,13 +19,31 @@ body {
 
 /* Global Variables */
 $highlightColor: #8fc7e0; /* Light blue */
+$highlightColor2: #89d0f0;
 $fa-font-path: "../webfonts";
+$gray: #899bb5;
 
 /* Mixins, Functions, and Utility */
 .circular--square { 
     border-radius: 50%;
     height: 70%;
     width: height;
+}
+
+.image {
+    border-radius: 0.25em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+}
+    l.image{
+        float: left;
+    }
+
+table, tr, td {
+    border-style: 'none';
+    padding: 10px;
+    margin: auto auto;
 }
 
 @mixin clearfix() {
