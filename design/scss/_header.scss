@@ -6,3 +6,52 @@
     background-attachment: fixed;
     min-height: 67.5rem;
 }
+
+.headBkgd {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 45px;
+    position: relative;
+    padding: $font-l; //padding 50px
+    margin: $font-xl 18.75rem; //margins 90px 300px
+
+
+    @include breakpoint-dwn(medium){
+        padding: $font-s;
+        margin: $font-l;
+    }
+
+    &__image {
+        background-image: url(/assets/pfp2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 45px;
+        background-position: center center;
+        min-height: 19.6875rem;
+        width: 0;
+        padding-right: 19.6875rem;
+
+        @include breakpoint-dwn(medium){
+            min-height: 14.0625rem;
+            padding-right: 14.0625rem;
+        }
+    }
+
+    &__line {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            background: $gray;
+            left: 45%;
+            right: 0;
+            width: 10%;
+
+            @include breakpoint-dwn(medium){
+                height: 1px;
+                left: 40%;
+                width: 20%;
+            }
+        }
+    }
+}
