@@ -1,0 +1,10 @@
+.pubs {
+    background-color: $purple;
+    color: $white;
+    padding: $font-l 18.75rem;
+
+    @include breakpoint-dwn(medium){
+        padding: $font-m 1rem;
+    }
+
+}

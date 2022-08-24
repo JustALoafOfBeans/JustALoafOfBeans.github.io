@@ -43,10 +43,113 @@ body {
   text-align: center;
 }
 
+h1, h2 {
+  color: inherit;
+  margin: 3.125rem auto;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  font-size: 3.125rem;
+  font-weight: 300;
+}
+
+@media (max-width: 63.9375em) {
+  h1, h2 {
+    font-size: 1.5625rem;
+    margin: 0.9375rem auto;
+  }
+}
+
+h1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: #3E3E3E;
+  left: 0;
+  top: 50%;
+}
+
+@media (max-width: 63.9375em) {
+  h1:before {
+    height: 1px;
+    left: 40%;
+    width: 20%;
+    top: 100%;
+  }
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #3E3E3E;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+@media (max-width: 63.9375em) {
+  h1:after {
+    display: none;
+  }
+}
+
+h2:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #FFFFFF;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+@media (max-width: 63.9375em) {
+  h2:before {
+    height: 1px;
+    left: 40%;
+    width: 20%;
+    top: 100%;
+  }
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #FFFFFF;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+@media (max-width: 63.9375em) {
+  h2:after {
+    display: none;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-jc-c {
@@ -138,6 +241,93 @@ body {
     height: 1px;
     left: 40%;
     width: 20%;
+  }
+}
+
+.journey {
+  background-color: #FFFFFF;
+  color: #3E3E3E;
+  padding: 3.125rem 15%;
+}
+
+@media (max-width: 63.9375em) {
+  .journey {
+    padding: 2.1875rem 1rem;
+  }
+}
+
+.journey__sub {
+  font-size: 1.5625rem;
+  padding-bottom: 0.9375rem;
+}
+
+@media (max-width: 63.9375em) {
+  .journey__sub {
+    font-size: 0.625rem;
+  }
+}
+
+.journey__skills {
+  font-size: 1.5625rem;
+  font-style: italic;
+  margin-right: 0.9375rem;
+}
+
+@media (max-width: 63.9375em) {
+  .journey__skills {
+    font-size: 0.625rem;
+  }
+}
+
+.s {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 10px;
+  width: 100%;
+}
+
+.s:not(:last-child) {
+  margin: 0 auto 3.125rem auto;
+}
+
+.s img {
+  height: 9.375rem;
+  padding: 0 1.5625rem;
+}
+
+@media (max-width: 63.9375em) {
+  .s img {
+    height: 4.0625rem;
+    padding: 0 0.9375rem;
+  }
+}
+
+.s h3 {
+  margin: 0;
+  color: #3E3E3E;
+  font-size: 2.1875rem;
+}
+
+@media (max-width: 63.9375em) {
+  .s h3 {
+    font-size: 0.9375rem;
+  }
+}
+
+.pubs {
+  background-color: #8D6DE8;
+  color: #FFFFFF;
+  padding: 3.125rem 18.75rem;
+}
+
+@media (max-width: 63.9375em) {
+  .pubs {
+    padding: 2.1875rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
