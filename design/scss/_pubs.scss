@@ -1,10 +1,19 @@
 .pubs {
-    background-color: $purple;
+    background: radial-gradient(139.85% 139.85% at 50% 100%, rgba(150, 161, 165, 0.6) 0%, rgba(141, 109, 232, 0.6) 70.01%), url(/assets/white.png);
     color: $white;
-    padding: $font-l 18.75rem;
+    padding: $font-l 5%;
 
     @include breakpoint-dwn(medium){
         padding: $font-m 1rem;
+    }
+
+    &__title {
+        font-size: $font-m;
+        font-weight: 600;
+
+        @include breakpoint-dwn(medium) {
+            font-size: $font-xs;
+        }
     }
 
 }
