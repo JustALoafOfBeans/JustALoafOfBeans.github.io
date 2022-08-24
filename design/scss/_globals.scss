@@ -37,6 +37,9 @@ body {
 .subTitle {
     //body is adjusted to subTitle size already
     text-align: center;
+    @include breakpoint-dwn(medium) {
+        font-size: $font-xs;
+    }
 }
 
 .basicText {
@@ -79,7 +82,7 @@ h1, h2 {
         content: "";
         display: block;
         position: absolute;
-        width: 120px;
+        width: 70px;
         height: 2px;
         background: $gray;
         left: 0;
@@ -96,7 +99,7 @@ h1, h2 {
     h1:after {
         content: "";
         display: block;
-        width: 120px;
+        width: 70px;
         height: 2px;
         background: $gray;
         right: 0;

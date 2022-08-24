@@ -1,0 +1,9 @@
+.hobbies {
+    background-color: $white;
+    color: $gray;
+    padding: $font-l 5%;
+
+    @include breakpoint-dwn(medium){
+        padding: $font-m 1rem;
+    }
+}

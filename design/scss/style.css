@@ -43,6 +43,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 63.9375em) {
+  .subTitle {
+    font-size: 0.9375rem;
+  }
+}
+
 .basicText {
   font-size: 1.5625rem;
   padding-bottom: 0.9375rem;
@@ -85,7 +91,7 @@ h1:before {
   content: "";
   display: block;
   position: absolute;
-  width: 120px;
+  width: 70px;
   height: 2px;
   background: #3E3E3E;
   left: 0;
@@ -104,7 +110,7 @@ h1:before {
 h1:after {
   content: "";
   display: block;
-  width: 120px;
+  width: 70px;
   height: 2px;
   background: #3E3E3E;
   right: 0;
@@ -361,6 +367,64 @@ h2:after {
 @media (max-width: 63.9375em) {
   .pubs__title {
     font-size: 0.9375rem;
+  }
+}
+
+.hobbies {
+  background-color: #FFFFFF;
+  color: #3E3E3E;
+  padding: 3.125rem 5%;
+}
+
+@media (max-width: 63.9375em) {
+  .hobbies {
+    padding: 2.1875rem 1rem;
+  }
+}
+
+.connect {
+  background: linear-gradient(87.16deg, rgba(150, 161, 165, 0.6) 0%, rgba(141, 109, 232, 0.6) 100%);
+  color: #FFFFFF;
+  padding: 3.125rem 5%;
+}
+
+@media (max-width: 63.9375em) {
+  .connect {
+    padding: 2.1875rem 1rem;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.social:not(:last-child) {
+  margin: 0 auto 0.625rem auto;
+}
+
+.social img {
+  height: 3rem;
+  padding: 0 1.5625rem;
+}
+
+@media (max-width: 63.9375em) {
+  .social img {
+    height: 2rem;
+    padding: 0 0.9375rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
