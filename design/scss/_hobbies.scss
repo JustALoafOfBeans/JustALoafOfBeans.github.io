@@ -6,4 +6,29 @@
     @include breakpoint-dwn(medium){
         padding: $font-m 1rem;
     }
+
+    &__food {
+        background: url(/assets/icecream.jpg), rgba(141, 109, 232, 0.6);
+        border-radius: 45px;
+    }
+    &__travel {
+        background: url(/assets/eiffleTower.jpg), rgba(141, 109, 232, 0.6);
+        border-radius: 45px;
+    }
+    &__fashion {
+        background: url(/assets/dress.jpg), rgba(141, 109, 232, 0.6);
+        border-radius: 45px;
+    }
+    &__games {
+        background: url(/assets/switch.jpg), rgba(141, 109, 232, 0.6);
+        border-radius: 45px;
+    }
+}
+
+.gridCont {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 20rem 20rem;
+    gap: 10%;
+    //align-items: center;
 }
