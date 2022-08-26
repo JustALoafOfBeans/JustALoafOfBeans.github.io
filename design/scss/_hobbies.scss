@@ -1,0 +1,66 @@
+.hobbies {
+    background-color: $white;
+    color: $gray;
+    padding: $font-l 5%;
+
+    @include breakpoint-dwn(medium){
+        padding: $font-m 1rem;
+    }
+
+    &__food {
+        background: linear-gradient(rgba(141, 109, 232, 0.6),rgba(141, 109, 232, 0.6)), url(/assets/icecream.jpg);
+        border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
+    }
+    &__travel {
+        background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/eiffleTower.jpg);
+        border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
+    }
+    &__fashion {
+        background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/dress.jpg);
+        border-radius: 45px;
+        background-size: cover;
+        background-position: top center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
+    }
+    &__games {
+        background: linear-gradient(rgba(141, 109, 232, 0.6),rgba(141, 109, 232, 0.6)), url(/assets/switch.jpg);
+        border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
+    }
+}
+
+.gridCont {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 20rem 20rem;
+    gap: 5%;
+    padding-bottom: $font-l;
+
+    @include breakpoint-dwn(medium) {
+        gap: 1%;
+        grid-template-columns: 70%;
+        grid-template-rows: 12rem 12rem 12rem 12rem;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,35 @@
+.connect {
+    background: linear-gradient(87.16deg, rgba(150, 161, 165, 0.6) 0%, rgba(141, 109, 232, 0.6) 100%);
+    color: $white;
+    padding: $font-l 5%;
+
+    @include breakpoint-dwn(medium){
+        padding: $font-m 1rem;
+    }
+}
+
+
+.social {
+    display: flex;
+    justify-content:left;
+    padding: 0;
+    width: 100%;
+    padding-left: 29%; //need to find better solution to center flex box
+
+    &:not(:last-child){
+        margin: 0 auto $font-xxs auto;
+    }
+    @include breakpoint-dwn(medium) {
+        padding-left: 15%;
+    }
+
+    img {
+        height: 3rem;
+        padding: 0 $font-s;
+
+        @include breakpoint-dwn(medium) {
+            height: 2rem;
+            padding: 0 $font-xs;
+        }
+    }
+}
