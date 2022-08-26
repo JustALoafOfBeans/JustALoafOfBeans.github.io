@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
-  font-size: 2.1875rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #3E3E3E;
   line-height: 1.3;
@@ -29,13 +29,13 @@ body {
 .title {
   text-align: center;
   font-weight: 600px;
-  font-size: 5.625rem;
+  font-size: 4.625rem;
   color: inherit;
 }
 
 @media (max-width: 63.9375em) {
   .title {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 }
 
@@ -72,11 +72,11 @@ a:hover {
 
 h1, h2 {
   color: inherit;
-  margin: 3.125rem auto;
+  margin: 3rem auto;
   text-align: center;
   max-width: 600px;
   position: relative;
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 
@@ -224,14 +224,14 @@ h2:after {
   background: rgba(255, 255, 255, 0.55);
   border-radius: 45px;
   position: relative;
-  padding: 3.125rem;
-  margin: 5.625rem 18.75rem;
+  padding: 3rem;
+  margin: 4.625rem 18.75rem;
 }
 
 @media (max-width: 63.9375em) {
   .headBkgd {
     padding: 1.5625rem;
-    margin: 3.125rem;
+    margin: 3rem;
   }
 }
 
@@ -275,12 +275,12 @@ h2:after {
 .journey {
   background-color: #FFFFFF;
   color: #3E3E3E;
-  padding: 3.125rem 15%;
+  padding: 3rem 15%;
 }
 
 @media (max-width: 63.9375em) {
   .journey {
-    padding: 2.1875rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -320,7 +320,7 @@ h2:after {
 }
 
 .s:not(:last-child) {
-  margin: 0 auto 3.125rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 .s img {
@@ -338,7 +338,7 @@ h2:after {
 .s h3 {
   margin: 0;
   color: #3E3E3E;
-  font-size: 2.1875rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -350,17 +350,17 @@ h2:after {
 .pubs {
   background: radial-gradient(139.85% 139.85% at 50% 100%, rgba(150, 161, 165, 0.6) 0%, rgba(141, 109, 232, 0.6) 70.01%), url(/assets/white.png);
   color: #FFFFFF;
-  padding: 3.125rem 5%;
+  padding: 3rem 5%;
 }
 
 @media (max-width: 63.9375em) {
   .pubs {
-    padding: 2.1875rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 
 .pubs__title {
-  font-size: 2.1875rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -373,54 +373,111 @@ h2:after {
 .hobbies {
   background-color: #FFFFFF;
   color: #3E3E3E;
-  padding: 3.125rem 5%;
+  padding: 3rem 5%;
 }
 
 @media (max-width: 63.9375em) {
   .hobbies {
-    padding: 2.1875rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 
 .hobbies__food {
-  background: url(/assets/icecream.jpg), rgba(141, 109, 232, 0.6);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(141, 109, 232, 0.6)), to(rgba(141, 109, 232, 0.6))), url(/assets/icecream.jpg);
+  background: linear-gradient(rgba(141, 109, 232, 0.6), rgba(141, 109, 232, 0.6)), url(/assets/icecream.jpg);
   border-radius: 45px;
+  background-size: cover;
+  background-position: center center;
+  padding: 8rem 0;
+}
+
+@media (max-width: 63.9375em) {
+  .hobbies__food {
+    padding: 4rem 0;
+  }
 }
 
 .hobbies__travel {
-  background: url(/assets/eiffleTower.jpg), rgba(141, 109, 232, 0.6);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 161, 165, 0.6)), to(rgba(150, 161, 165, 0.6))), url(/assets/eiffleTower.jpg);
+  background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/eiffleTower.jpg);
   border-radius: 45px;
+  background-size: cover;
+  background-position: center center;
+  padding: 8rem 0;
+}
+
+@media (max-width: 63.9375em) {
+  .hobbies__travel {
+    padding: 4rem 0;
+  }
 }
 
 .hobbies__fashion {
-  background: url(/assets/dress.jpg), rgba(141, 109, 232, 0.6);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 161, 165, 0.6)), to(rgba(150, 161, 165, 0.6))), url(/assets/dress.jpg);
+  background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/dress.jpg);
   border-radius: 45px;
+  background-size: cover;
+  background-position: top center;
+  padding: 8rem 0;
+}
+
+@media (max-width: 63.9375em) {
+  .hobbies__fashion {
+    padding: 4rem 0;
+  }
 }
 
 .hobbies__games {
-  background: url(/assets/switch.jpg), rgba(141, 109, 232, 0.6);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(141, 109, 232, 0.6)), to(rgba(141, 109, 232, 0.6))), url(/assets/switch.jpg);
+  background: linear-gradient(rgba(141, 109, 232, 0.6), rgba(141, 109, 232, 0.6)), url(/assets/switch.jpg);
   border-radius: 45px;
+  background-size: cover;
+  background-position: center center;
+  padding: 8rem 0;
+}
+
+@media (max-width: 63.9375em) {
+  .hobbies__games {
+    padding: 4rem 0;
+  }
 }
 
 .gridCont {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 45% 45%;
       grid-template-columns: 45% 45%;
   -ms-grid-rows: 20rem 20rem;
       grid-template-rows: 20rem 20rem;
-  gap: 10%;
+  gap: 5%;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 63.9375em) {
+  .gridCont {
+    gap: 1%;
+    -ms-grid-columns: 70%;
+        grid-template-columns: 70%;
+    -ms-grid-rows: 12rem 12rem 12rem 12rem;
+        grid-template-rows: 12rem 12rem 12rem 12rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .connect {
   background: linear-gradient(87.16deg, rgba(150, 161, 165, 0.6) 0%, rgba(141, 109, 232, 0.6) 100%);
   color: #FFFFFF;
-  padding: 3.125rem 5%;
+  padding: 3rem 5%;
 }
 
 @media (max-width: 63.9375em) {
   .connect {
-    padding: 2.1875rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 

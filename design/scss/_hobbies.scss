@@ -8,27 +8,59 @@
     }
 
     &__food {
-        background: url(/assets/icecream.jpg), rgba(141, 109, 232, 0.6);
+        background: linear-gradient(rgba(141, 109, 232, 0.6),rgba(141, 109, 232, 0.6)), url(/assets/icecream.jpg);
         border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
     }
     &__travel {
-        background: url(/assets/eiffleTower.jpg), rgba(141, 109, 232, 0.6);
+        background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/eiffleTower.jpg);
         border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
     }
     &__fashion {
-        background: url(/assets/dress.jpg), rgba(141, 109, 232, 0.6);
+        background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/dress.jpg);
         border-radius: 45px;
+        background-size: cover;
+        background-position: top center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
     }
     &__games {
-        background: url(/assets/switch.jpg), rgba(141, 109, 232, 0.6);
+        background: linear-gradient(rgba(141, 109, 232, 0.6),rgba(141, 109, 232, 0.6)), url(/assets/switch.jpg);
         border-radius: 45px;
+        background-size: cover;
+        background-position: center center;
+        padding: 8rem 0;
+        @include breakpoint-dwn(medium) {
+            padding: 4rem 0;
+        }
     }
 }
 
 .gridCont {
     display: grid;
+    align-items: center;
     grid-template-columns: 45% 45%;
     grid-template-rows: 20rem 20rem;
-    gap: 10%;
-    //align-items: center;
+    gap: 5%;
+    padding-bottom: $font-l;
+
+    @include breakpoint-dwn(medium) {
+        gap: 1%;
+        grid-template-columns: 70%;
+        grid-template-rows: 12rem 12rem 12rem 12rem;
+        justify-content: center;
+    }
 }
