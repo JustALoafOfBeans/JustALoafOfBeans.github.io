@@ -1,25 +1,22 @@
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 2rem;
   font-weight: 300;
   color: #3E3E3E;
   line-height: 1.3;
   overflow-x: hidden;
 }
-
 @media (max-width: 63.9375em) {
   body {
     font-size: 1.5625rem;
@@ -32,7 +29,6 @@ body {
   font-size: 4.625rem;
   color: inherit;
 }
-
 @media (max-width: 63.9375em) {
   .title {
     font-size: 3rem;
@@ -42,7 +38,6 @@ body {
 .subTitle {
   text-align: center;
 }
-
 @media (max-width: 63.9375em) {
   .subTitle {
     font-size: 0.9375rem;
@@ -53,7 +48,6 @@ body {
   font-size: 1.5625rem;
   padding-bottom: 0.9375rem;
 }
-
 @media (max-width: 63.9375em) {
   .basicText {
     font-size: 0.625rem;
@@ -79,7 +73,6 @@ h1, h2 {
   font-size: 3rem;
   font-weight: 300;
 }
-
 @media (max-width: 63.9375em) {
   h1, h2 {
     font-size: 1.5625rem;
@@ -97,7 +90,6 @@ h1:before {
   left: 0;
   top: 50%;
 }
-
 @media (max-width: 63.9375em) {
   h1:before {
     height: 1px;
@@ -117,7 +109,6 @@ h1:after {
   top: 50%;
   position: absolute;
 }
-
 @media (max-width: 63.9375em) {
   h1:after {
     display: none;
@@ -134,7 +125,6 @@ h2:before {
   top: 50%;
   position: absolute;
 }
-
 @media (max-width: 63.9375em) {
   h2:before {
     height: 1px;
@@ -154,7 +144,6 @@ h2:after {
   top: 50%;
   position: absolute;
 }
-
 @media (max-width: 63.9375em) {
   h2:after {
     display: none;
@@ -162,33 +151,18 @@ h2:after {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
 .flex-jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .flex-jc-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .flex-ai-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 @media (max-width: 63.9375em) {
@@ -227,14 +201,12 @@ h2:after {
   padding: 3rem;
   margin: 4.625rem 18.75rem;
 }
-
 @media (max-width: 63.9375em) {
   .headBkgd {
     padding: 1.5625rem;
     margin: 3rem;
   }
 }
-
 .headBkgd__image {
   background-image: url(/assets/pfp2.jpg);
   background-size: cover;
@@ -245,14 +217,12 @@ h2:after {
   width: 0;
   padding-right: 19.6875rem;
 }
-
 @media (max-width: 63.9375em) {
   .headBkgd__image {
     min-height: 14.0625rem;
     padding-right: 14.0625rem;
   }
 }
-
 .headBkgd__line::after {
   content: "";
   display: block;
@@ -263,7 +233,6 @@ h2:after {
   right: 0;
   width: 10%;
 }
-
 @media (max-width: 63.9375em) {
   .headBkgd__line::after {
     height: 1px;
@@ -277,30 +246,25 @@ h2:after {
   color: #3E3E3E;
   padding: 3rem 15%;
 }
-
 @media (max-width: 63.9375em) {
   .journey {
     padding: 2rem 1rem;
   }
 }
-
 .journey__sub {
   font-size: 1.5625rem;
   padding-bottom: 0.9375rem;
 }
-
 @media (max-width: 63.9375em) {
   .journey__sub {
     font-size: 0.625rem;
   }
 }
-
 .journey__skills {
   font-size: 1.5625rem;
   font-style: italic;
   margin-right: 0.9375rem;
 }
-
 @media (max-width: 63.9375em) {
   .journey__skills {
     font-size: 0.625rem;
@@ -309,38 +273,29 @@ h2:after {
 
 .s {
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   padding: 10px;
   width: 100%;
 }
-
 .s:not(:last-child) {
   margin: 0 auto 3rem auto;
 }
-
 .s img {
   height: 9.375rem;
   padding: 0 1.5625rem;
 }
-
 @media (max-width: 63.9375em) {
   .s img {
     height: 4.0625rem;
     padding: 0 0.9375rem;
   }
 }
-
 .s h3 {
   margin: 0;
   color: #3E3E3E;
   font-size: 2rem;
 }
-
 @media (max-width: 63.9375em) {
   .s h3 {
     font-size: 0.9375rem;
@@ -352,18 +307,15 @@ h2:after {
   color: #FFFFFF;
   padding: 3rem 5%;
 }
-
 @media (max-width: 63.9375em) {
   .pubs {
     padding: 2rem 1rem;
   }
 }
-
 .pubs__title {
   font-size: 2rem;
   font-weight: 600;
 }
-
 @media (max-width: 63.9375em) {
   .pubs__title {
     font-size: 0.9375rem;
@@ -375,67 +327,54 @@ h2:after {
   color: #3E3E3E;
   padding: 3rem 5%;
 }
-
 @media (max-width: 63.9375em) {
   .hobbies {
     padding: 2rem 1rem;
   }
 }
-
 .hobbies__food {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(141, 109, 232, 0.6)), to(rgba(141, 109, 232, 0.6))), url(/assets/icecream.jpg);
   background: linear-gradient(rgba(141, 109, 232, 0.6), rgba(141, 109, 232, 0.6)), url(/assets/icecream.jpg);
   border-radius: 45px;
   background-size: cover;
   background-position: center center;
   padding: 8rem 0;
 }
-
 @media (max-width: 63.9375em) {
   .hobbies__food {
     padding: 4rem 0;
   }
 }
-
 .hobbies__travel {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 161, 165, 0.6)), to(rgba(150, 161, 165, 0.6))), url(/assets/eiffleTower.jpg);
   background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/eiffleTower.jpg);
   border-radius: 45px;
   background-size: cover;
   background-position: center center;
   padding: 8rem 0;
 }
-
 @media (max-width: 63.9375em) {
   .hobbies__travel {
     padding: 4rem 0;
   }
 }
-
 .hobbies__fashion {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 161, 165, 0.6)), to(rgba(150, 161, 165, 0.6))), url(/assets/dress.jpg);
   background: linear-gradient(rgba(150, 161, 165, 0.6), rgba(150, 161, 165, 0.6)), url(/assets/dress.jpg);
   border-radius: 45px;
   background-size: cover;
   background-position: top center;
   padding: 8rem 0;
 }
-
 @media (max-width: 63.9375em) {
   .hobbies__fashion {
     padding: 4rem 0;
   }
 }
-
 .hobbies__games {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(141, 109, 232, 0.6)), to(rgba(141, 109, 232, 0.6))), url(/assets/switch.jpg);
   background: linear-gradient(rgba(141, 109, 232, 0.6), rgba(141, 109, 232, 0.6)), url(/assets/switch.jpg);
   border-radius: 45px;
   background-size: cover;
   background-position: center center;
   padding: 8rem 0;
 }
-
 @media (max-width: 63.9375em) {
   .hobbies__games {
     padding: 4rem 0;
@@ -443,29 +382,19 @@ h2:after {
 }
 
 .gridCont {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 47% 47%;
-      grid-template-columns: 47% 47%;
-  -ms-grid-rows: 20rem 20rem;
-      grid-template-rows: 20rem 20rem;
+  align-items: center;
+  grid-template-columns: 47% 47%;
+  grid-template-rows: 20rem 20rem;
   gap: 6%;
   padding-bottom: 3rem;
 }
-
 @media (max-width: 63.9375em) {
   .gridCont {
     gap: 1%;
-    -ms-grid-columns: 70%;
-        grid-template-columns: 70%;
-    -ms-grid-rows: 12rem 12rem 12rem 12rem;
-        grid-template-rows: 12rem 12rem 12rem 12rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    grid-template-columns: 70%;
+    grid-template-rows: 12rem 12rem 12rem 12rem;
+    justify-content: center;
   }
 }
 
@@ -474,7 +403,6 @@ h2:after {
   color: #FFFFFF;
   padding: 3rem 5%;
 }
-
 @media (max-width: 63.9375em) {
   .connect {
     padding: 2rem 1rem;
@@ -482,36 +410,27 @@ h2:after {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   padding: 0;
   width: 100%;
   padding-left: 29%;
 }
-
 .social:not(:last-child) {
   margin: 0 auto 0.625rem auto;
 }
-
 @media (max-width: 63.9375em) {
   .social {
     padding-left: 15%;
   }
 }
-
 .social img {
   height: 3rem;
   padding: 0 1.5625rem;
 }
-
 @media (max-width: 63.9375em) {
   .social img {
     height: 2rem;
     padding: 0 0.9375rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
